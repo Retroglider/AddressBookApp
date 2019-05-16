@@ -4,8 +4,9 @@ namespace Repository
 {
     interface IUnitOfWork:IDisposable
     {
+        IUserRepository Users { get; }
         IAddressBookRepository AddressBooks { get; }
-        ContactRepository Contacts { get; }
+        IContactRepository Contacts { get; }
         int Complete();
     }
 }

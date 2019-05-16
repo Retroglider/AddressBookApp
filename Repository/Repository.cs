@@ -29,7 +29,10 @@ namespace Repository
         {
             return Context.Set<T>().Where(predicate);
         }
-
+        public T SingleOrDefault(Expression<Func<T, bool>> predicate)
+        {
+            return Context.Set<T>().SingleOrDefault(predicate);
+        }
         public T Get(int id)
         {
             return Context.Set<T>().Find(id);

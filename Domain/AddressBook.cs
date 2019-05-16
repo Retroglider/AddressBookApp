@@ -7,6 +7,8 @@ namespace Domain
 
 
         public string Name { get; set; }
+
+        public int UserId { get; set; }
         public virtual ICollection<Contact> Contacts { get; set; }
     }
 }

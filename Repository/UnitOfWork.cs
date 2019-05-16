@@ -12,17 +12,17 @@ namespace Repository
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
+            Users = new UserRepository(_context);
             AddressBooks = new AddressBookRepository(_context);
             Contacts = new ContactRepository(_context);
         }
-
+        public IUserRepository Users { get; private set; }
         public IAddressBookRepository AddressBooks { get; private set; }
-
-        public ContactRepository Contacts { get; private set; }
+        public IContactRepository Contacts { get; private set; }
 
         public void Complete()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
         }
 
         public void Dispose()
@@ -32,7 +32,7 @@ namespace Repository
 
         int IUnitOfWork.Complete()
         {
-           return  _context.SaveChanges();
+            return _context.SaveChanges();
         }
     }
 }
