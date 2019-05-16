@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    public class Contact
+    public class Contact:BaseClass
     {
         [Required]
         public string FirstName { get; set; }
