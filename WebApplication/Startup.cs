@@ -30,7 +30,7 @@ namespace WebApplication
             });
 
             // EF Core DbContext
-            services.AddDbContext<Context>(options =>
+            services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 

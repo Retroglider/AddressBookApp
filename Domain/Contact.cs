@@ -5,6 +5,8 @@ namespace Domain
     public class Contact:BaseClass
     {
         [Required]
+        public int AddressBookId { get; set; }
+        [Required]
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }

@@ -1,13 +1,13 @@
 ﻿using Domain;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+//using Microsoft.Extensions.Configuration;
 using System;
 
 namespace Repository
 {
-    public class Context:DbContext
+    public class ApplicationDbContext:DbContext
     {
-        public Context()
+        public ApplicationDbContext()
         {
 
         }
@@ -27,6 +27,7 @@ namespace Repository
         }
 
         // Entities
+        public DbSet<User> Users { get; set; }
         public DbSet<AddressBook> AddressBooks { get; set; }
         public DbSet<Contact> Contacts { get; set; }
     }
