@@ -5,9 +5,9 @@ using System;
 
 namespace Repository
 {
-    public class AddressBookAppContext:DbContext
+    public class Context:DbContext
     {
-        public AddressBookAppContext()
+        public Context()
         {
 
         }
