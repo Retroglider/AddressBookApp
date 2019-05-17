@@ -5,11 +5,11 @@ using System;
 
 namespace Repository
 {
-    public class ApplicationDbContext:DbContext
+    public class ApplicationDbContext:DbContext, IContext
     {
         public ApplicationDbContext()
         {
-
+            
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

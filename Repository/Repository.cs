@@ -11,9 +11,9 @@ namespace Repository
     public class Repository<T> : IRepository<T> where T : class
     {
         protected readonly ApplicationDbContext Context;
-        public Repository(ApplicationDbContext context)
+        public Repository(IContext context)
         {
-            Context = context;
+            Context = (ApplicationDbContext)context;
         }
         public void Add(T entity)
         {

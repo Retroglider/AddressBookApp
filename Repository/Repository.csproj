@@ -148,6 +148,7 @@
     <Compile Include="Context.cs" />
     <Compile Include="IAddressBookRepository.cs" />
     <Compile Include="IContactRepository.cs" />
+    <Compile Include="IContext.cs" />
     <Compile Include="IUserRepository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IUnitOfWork.cs" />

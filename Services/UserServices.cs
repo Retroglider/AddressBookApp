@@ -1,23 +1,23 @@
 ﻿using Domain;
 using Repository;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services
 {
-    public class UserServices
+    public class UserServices:GenericService<User>
     {
-        private readonly UserRepository _userRepository;
-        public UserServices(IUserRepository userRepository)
+        
+        public UserServices(IRepository<User> userRepository)
         {
-
+            this.Repository = userRepository;
         }
         public User Authenticate(string systemId, string password)
         {
-            var user = _userRepository.SingleOrDefault(u => u.SystemId == systemId && u.Password == password);
+            var user = Repository.SingleOrDefault(u => u.SystemId == systemId && u.Password == password);
+
+            
+            if (user == null)
+                throw new Exception("System ID/password combination invalid.");
             return user;
         }
     }

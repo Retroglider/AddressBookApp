@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Repository;
 
 namespace Services
 {
     public class AddressBookServices
     {
+        private readonly IAddressBookRepository _addressBookRepository;
+        public AddressBookServices(IAddressBookRepository addressBookRepository)
+        {
+            _addressBookRepository = addressBookRepository;
+        }
+
+        
     }
 }

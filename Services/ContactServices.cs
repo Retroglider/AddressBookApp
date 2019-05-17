@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Repository;
 namespace Services
 {
     public class ContactServices
     {
+        private readonly IContactRepository _contactRepository;
+        public ContactServices(IContactRepository contactRepository)
+        {
+            _contactRepository = contactRepository;
+        }
     }
 }
