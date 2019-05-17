@@ -2,7 +2,7 @@
 
 namespace Repository
 {
-    interface IUnitOfWork:IDisposable
+    public interface IUnitOfWork:IDisposable
     {
         IUserRepository Users { get; }
         IAddressBookRepository AddressBooks { get; }

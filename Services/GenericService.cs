@@ -1,15 +1,13 @@
 ﻿using Repository;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services
 {
     public class GenericService<T> : IDisposable,IGenericService<T> where T : class
     {
         public IRepository<T> Repository { get; internal set; }
+        public IUnitOfWork UnitOfWork { get; internal set; }
 
         public void Add(T entity)
         {
@@ -39,7 +37,7 @@ namespace Services
         public void Dispose()
         {
             
-            throw new NotImplementedException();
+            
         }
     }
 }

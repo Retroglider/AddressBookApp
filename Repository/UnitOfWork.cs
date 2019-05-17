@@ -9,9 +9,9 @@ namespace Repository
     public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _context;
-        public UnitOfWork(ApplicationDbContext context)
+        public UnitOfWork(IContext context)
         {
-            _context = context;
+            _context = (ApplicationDbContext)context;
             Users = new UserRepository(_context);
             AddressBooks = new AddressBookRepository(_context);
             Contacts = new ContactRepository(_context);

@@ -26,6 +26,7 @@ namespace WebApplicationMvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IContext, ApplicationDbContext>();
+            services.AddSingleton<IUnitOfWork, UnitOfWork>();
             services.AddSingleton<IUserRepository, UserRepository>();
             
             services.Configure<CookiePolicyOptions>(options =>

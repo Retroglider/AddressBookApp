@@ -1,26 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using WebApplicationMvc.Models;
-using Services;
+﻿using Microsoft.AspNetCore.Mvc;
 using Repository;
+using Services;
+using System.Diagnostics;
+using WebApplicationMvc.Models;
+using Domain;
+using System.Threading.Tasks;
 
 namespace WebApplicationMvc.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IUserRepository _userRepository;
-        public HomeController(IUserRepository userRepository)
+        private readonly IUnitOfWork _unitOfWork;
+        public HomeController(IUnitOfWork unitOfWork)
         {
-            _userRepository = userRepository;
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            var userService = new UserServices(_userRepository);
-            var result = userService.Authenticate("retroglider", "password");
+            var userService = new UserServices(_unitOfWork);
+            //var result = userService.Authenticate("retroglider", "password");
+
+            var user = new User() { FirstName = "Carsten", LastName = "Kampe", SystemId="ck", Password="kampe", Email="2cool4u@gmail.com" };
+            userService.Add(user);
             return View();
         }
 
