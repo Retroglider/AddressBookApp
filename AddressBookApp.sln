@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{C98826F8-FD18-4B51-97E0-43A6AC474EB1}"
 EndProject
@@ -9,9 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{0B6F8A34-A5C2-4458-9DCB-A410806A55BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{7D1323D3-F973-446B-8856-142F623DADA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D1323D3-F973-446B-8856-142F623DADA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D1323D3-F973-446B-8856-142F623DADA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D1323D3-F973-446B-8856-142F623DADA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D1323D3-F973-446B-8856-142F623DADA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
