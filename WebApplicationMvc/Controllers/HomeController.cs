@@ -20,8 +20,8 @@ namespace WebApplicationMvc.Controllers
             var userService = new UserServices(_unitOfWork);
             //var result = userService.Authenticate("retroglider", "password");
 
-            var user = new User() { FirstName = "Carsten", LastName = "Kampe", SystemId="ck", Password="kampe", Email="2cool4u@gmail.com" };
-            userService.Add(user);
+            //var user = new User() { FirstName = "Carsten", LastName = "Kampe", SystemId="ck", Password="kampe", Email="2cool4u@gmail.com" };
+            //userService.Add(user);
             return View();
         }
 

@@ -42,9 +42,9 @@ namespace ConsoleApp1
                 unitOfWork.Complete();
 
                 //unitOfWork.Contacts.RemoveRange(new List<Contact>() { contact1, contact2 });
-                unitOfWork.Contacts.Remove(contact1);
-                unitOfWork.Contacts.Remove(contact2);
-                unitOfWork.Complete();
+                //unitOfWork.Contacts.Remove(contact1);
+                //unitOfWork.Contacts.Remove(contact2);
+                //unitOfWork.Complete();
             }
         }
     }

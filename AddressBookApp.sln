@@ -11,15 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Re
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{1A42C20E-5497-4EF1-9218-CE282A7DCE85}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMvc", "WebApplicationMvc\WebApplicationMvc.csproj", "{C9A2A95E-9AB8-46C7-AEB5-114C13B0800A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E1548695-62CE-4BAA-AA33-9FB872B597CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{9F19EC5B-792D-4DFF-B959-502FD5F66411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdgeDriverTest", "EdgeDriverTest\EdgeDriverTest.csproj", "{EAFEC63D-9431-4D48-998F-A2C913766FE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EdgeDriverTest", "EdgeDriverTest\EdgeDriverTest.csproj", "{EAFEC63D-9431-4D48-998F-A2C913766FE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +41,6 @@ Global
 		{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2A97A8A-D4FF-45F9-BB36-FE203D1BE8C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A42C20E-5497-4EF1-9218-CE282A7DCE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A42C20E-5497-4EF1-9218-CE282A7DCE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A42C20E-5497-4EF1-9218-CE282A7DCE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A42C20E-5497-4EF1-9218-CE282A7DCE85}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C9A2A95E-9AB8-46C7-AEB5-114C13B0800A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C9A2A95E-9AB8-46C7-AEB5-114C13B0800A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9A2A95E-9AB8-46C7-AEB5-114C13B0800A}.Release|Any CPU.ActiveCfg = Release|Any CPU

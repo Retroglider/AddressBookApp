@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Authenticate";
+}
+
+<h1>Authenticate</h1>
+
+@using (Html.BeginForm("Authenticate", "Users", FormMethod.Get))
+{
+    <label>System Id:</label> @Html.TextBox("SystemId")
+    <br /><label>Password:</label> @Html.Password("Password")
+    <br /><input type="submit" value="Login" />
+
+    <br />@ViewData["ErrorMessage"]
+    @if (ViewData["User"] != null)
+    {
+        var user = (Domain.User)ViewData["User"];
+
+
+        @String.Format("Welcome {0} {1}", user.FirstName, user.LastName)
+
+        @Html.ActionLink("Go to address books", "Index","AddressBooks", new { userId=user.Id })
+    }
+}
+
+<script type="text/javascript">
+    window.onload = function () {
+        var SystemId = document.getElementById("SystemId");
+        if (SystemId != null) {
+            SystemId.focus();
+        }
+    };
+</script>
