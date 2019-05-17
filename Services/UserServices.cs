@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using Domain;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,10 @@ namespace Services
         {
 
         }
-
+        public User Authenticate(string systemId, string password)
+        {
+            var user = _userRepository.SingleOrDefault(u => u.SystemId == systemId && u.Password == password);
+            return user;
+        }
     }
 }

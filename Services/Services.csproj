@@ -48,6 +48,10 @@
     <Compile Include="UserServices.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{C98826F8-FD18-4B51-97E0-43A6AC474EB1}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{0b6f8a34-a5c2-4458-9dcb-a410806a55ba}</Project>
       <Name>Repository</Name>
